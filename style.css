@@ -1,79 +1,114 @@
 /*  general stuff */
-* { 
-    margin :0;
+* {
+    margin: 0;
     border: 0;
-padding: 0;
+    padding: 0;
 }
+
 a {
     text-decoration: none;
-    }
+}
+
 body {
-    display:flexbox;
+    display: flexbox;
     height: 100%;
-}    
-    /* header and footer  and content*/
-    .header{
+    min-height: 100%;
+}
+
+.grid-item {
+    display: contents;
+    border: 2px blue solid;
+}
+
+/* header and footer  and content*/
+.header {
     height: 50px;
     border-bottom: 5px black solid;
     background-color: orange;
     display: grid;
     grid-template: 100%/25% 50% 25%;
     font-size: 40px;
-    text-wrap:nowrap;
+    text-wrap: nowrap;
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-.header a{
+
+.header a {
     color: red;
 }
 
-.grid-item {
-    display: contents;
-}
 .leftheaderimg {
-height: 100%;
-justify-self: start;
+    height: 100%;
+    justify-self: start;
 }
 
-.rightheaderimg{
-    height:100%;
+.rightheaderimg {
+    height: 100%;
     justify-self: end;
 }
 
 
 footer {
-height: 30px;
-width: 100%;
-bottom:0;
-display:flex;
-border-top: 5px black solid;
-background-color: orange;
-text-align: left;
-text-wrap: nowrap;
-align-items: end;
+    height: 30px;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    border-top: 5px black solid;
+    background-color: orange;
+    text-align: left;
+    text-wrap: nowrap;
+    align-items: end;
 }
 
 footer a {
-position: absolute;
-text-align: right;
-right:0;
-}   
+    position: absolute;
+    text-align: right;
+    right: 0;
+}
 
 .content {
     display: block;
     min-height: max-content;
     background-color: beige;
+    min-height: 100%;
+height: auto;
 }
+
 /*  menu */
-.menu img{
-width:80%;
-height: 80%;
+.menu {
+    display: grid;
+    /*    grid-template: repeat(5,20%)/repeat(5, 20%); */
+    grid-template: 50% 50%/50% 50%;
+}
+
+.menu button {
+    width: 10%;
+    height: 1.5em;
+    background-color: green;
+}
+.menu button:hover{
+    background-color: darkgreen;
+}
+.menu input {
+    width: 10%;
+    height: 1.5em;
+}
+
+.menu img {
+    width: 80%;
+    height: 80%;
+    display:block;
+    transform: translate(10%, 0);
 
 }
-.menu img:hover{
 
-visibility: hidden;
+.menu .grid-item {
+    width: 100%;
+    display: block;
+    height: 100%;
+    border: 1px red dotted  ;
 }
+
 
 
 
