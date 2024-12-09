@@ -7,9 +7,12 @@ padding: 0;
 a {
     text-decoration: none;
     }
-    
-    /* header and footer  */
-.header{
+body {
+    display:flexbox;
+    height: 100%;
+}    
+    /* header and footer  and content*/
+    .header{
     height: 50px;
     border-bottom: 5px black solid;
     background-color: orange;
@@ -38,9 +41,10 @@ justify-self: start;
 }
 
 
-.footer {
+footer {
 height: 30px;
 width: 100%;
+bottom:0;
 display:flex;
 border-top: 5px black solid;
 background-color: orange;
@@ -49,9 +53,29 @@ text-wrap: nowrap;
 align-items: end;
 }
 
-.footer a {
+footer a {
 position: absolute;
 text-align: right;
 right:0;
 }   
+
+.content {
+    display: block;
+    min-height: max-content;
+    background-color: beige;
+}
+/*  menu */
+.menu img{
+width:80%;
+height: 80%;
+
+}
+.menu img:hover{
+
+visibility: hidden;
+}
+
+
+
+
 /*   */
