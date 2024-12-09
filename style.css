@@ -1,13 +1,57 @@
+/*  general stuff */
 * { 
     margin :0;
     border: 0;
 padding: 0;
 }
+a {
+    text-decoration: none;
+    }
+    
+    /* header and footer  */
 .header{
-    height: 100px;
+    height: 50px;
     border-bottom: 5px black solid;
+    background-color: orange;
+    display: grid;
+    grid-template: 100%/25% 50% 25%;
+    font-size: 40px;
+    text-wrap:nowrap;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-.content {
+.header a{
+    color: red;
+}
+
+.grid-item {
+    display: contents;
+}
+.leftheaderimg {
+height: 100%;
+justify-self: start;
+}
+
+.rightheaderimg{
+    height:100%;
+    justify-self: end;
+}
 
 
+.footer {
+height: 30px;
+width: 100%;
+display:flex;
+border-top: 5px black solid;
+background-color: orange;
+text-align: left;
+text-wrap: nowrap;
+align-items: end;
 }
+
+.footer a {
+position: absolute;
+text-align: right;
+right:0;
+}   
+/*   */
